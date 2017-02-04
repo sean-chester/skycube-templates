@@ -39,12 +39,12 @@ The following algorithms have been implemented in the Template Skycube benchmark
 It is based on a newly developed template (Single Thread, Single Cuboid), computing
 multiple cuboids at once, using a sequentially running version of the Hybrid algorithm [2].
  
- * **SDSC** [4]: Located in [src/sdsc](src/sdsc). 
+ * **SDSC** [3]: Located in [src/sdsc](src/sdsc). 
 It is based on a newly developed template (Single Device, Single Cuboid), computing
 one cuboid in parallel per available device (CPU or GPU). On the GPU it uses the SkyAlign [6]
 algorithm and on the CPU it uses the Hybrid algorithm [2].
 
- * **MDMC** [4]: Located in [src/mdmc](src/mdmc). 
+ * **MDMC** [3]: Located in [src/mdmc](src/mdmc). 
 It is based on a newly developed template (Multiple Devices, Multiple Cuboids), computing
 the cuboid membership for each data point in parallel.
   
@@ -53,11 +53,11 @@ All CPU algorithms  use common dominance tests from  [common/common2.h](common/c
 ------------------------------------
 ### Datasets
 
-For reproducibility of the experiments in [2], we include three datasets.
+For reproducibility of the experiments in [3], we include three datasets.
 The [WEATHER](workloads/elv_weather-U-15-566268.csv) dataset was originally obtained from [The University of East Anglia Climatic Research Unit](http://www.cru.uea.ac.uk/cru/data/hrg/tmc).
 The [CoverType](workloads/covtype-U-10-581012.csv) dataset was originally obtained from the [UC Irvine Machine Learning Repository](http://archive.ics.uci.edu/ml/index.html).
 Both were preprocessed for skycube computation.
-We additionally include two classic skyline datasets, exactly as used in [4]: 
+We additionally include two classic skyline datasets, provided by the authors of [4]: 
 [NBA](workloads/nba-U-8-17264.csv) and [HOUSE](workloads/house-U-6-127931.csv).
 
 The synthetic workloads can be generated with the standard benchmark skyline 
