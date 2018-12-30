@@ -1,5 +1,3 @@
-**The MIT License (MIT)**
-
 Copyright (c) 2016-2017 Darius Šidlauskas, Sean Chester, and Kenneth S. Bøgh
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this 
